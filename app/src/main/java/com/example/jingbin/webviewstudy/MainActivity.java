@@ -18,7 +18,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.jingbin.webviewstudy.tencentx5.X5WebViewActivity;
+
 import com.example.jingbin.webviewstudy.utils.StatusBarUtil;
 
 /**
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (rbSystem.isChecked()) {
             WebViewActivity.loadUrl(this, mUrl, mTitle);
         } else {
-            X5WebViewActivity.loadUrl(this, mUrl, mTitle);
+//            X5WebViewActivity.loadUrl(this, mUrl, mTitle);
         }
     }
 

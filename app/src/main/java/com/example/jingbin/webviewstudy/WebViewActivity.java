@@ -90,7 +90,9 @@ public class WebViewActivity extends AppCompatActivity implements IWebPageView {
         initTitle();
         initWebView();
         mUrl = getIntent().getStringExtra("url");
+//        Log.e("cww", mUrl);
         webView.loadUrl(mUrl);
+//        webView.loadUrl("https://app.myzaker.com/index.php?app_id=10376");
 //        webView.loadUrl("https://www.xf01.cc/");
         getDataFromBrowser(getIntent());
     }
@@ -98,6 +100,7 @@ public class WebViewActivity extends AppCompatActivity implements IWebPageView {
     private void getIntentData() {
         mUrl = getIntent().getStringExtra("mUrl");
         mTitle = getIntent().getStringExtra("mTitle");
+//        mTitle = "欢迎使用";
     }
 
 
@@ -405,7 +408,7 @@ public class WebViewActivity extends AppCompatActivity implements IWebPageView {
     }
 
     public void setTitle(String mTitle) {
-        tvGunTitle.setText(mTitle);
+        tvGunTitle.setText("");
     }
 
     /**
@@ -510,7 +513,7 @@ public class WebViewActivity extends AppCompatActivity implements IWebPageView {
                 String host = data.getHost();
                 String path = data.getPath();
                 String text = "Scheme: " + scheme + "\n" + "host: " + host + "\n" + "path: " + path;
-                Log.e("data", text);
+//                Log.e("data", text);
                 String url = scheme + "://" + host + path;
                 webView.loadUrl(url);
             } catch (Exception e) {
@@ -548,7 +551,7 @@ public class WebViewActivity extends AppCompatActivity implements IWebPageView {
                         public void onClick(DialogInterface dialog, int which) {
                             String picUrl = hitTestResult.getExtra();
                             //获取图片
-                            Log.e("picUrl", picUrl);
+//                            Log.e("picUrl", picUrl);
                             switch (which) {
                                 case 0:
                                     break;

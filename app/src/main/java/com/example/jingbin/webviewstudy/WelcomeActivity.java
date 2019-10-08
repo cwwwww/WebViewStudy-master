@@ -12,7 +12,6 @@ import android.webkit.WebView;
 import android.widget.TextView;
 
 import com.example.jingbin.webviewstudy.bean.QPData;
-import com.example.jingbin.webviewstudy.tencentx5.X5WebViewActivity;
 import com.example.jingbin.webviewstudy.utils.JudgeNewWorkUtil;
 import com.example.jingbin.webviewstudy.utils.ToastUtil;
 import com.google.gson.Gson;
